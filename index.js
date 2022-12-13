@@ -13,7 +13,7 @@ const cors = require("cors");
 const app = express()
 
 app.use(cors({
-    origin: "https://localhost:3000",
+    origin: ["https://localhost:3000", "https://Blogers-area.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
 }));
 app.use(express.json());
